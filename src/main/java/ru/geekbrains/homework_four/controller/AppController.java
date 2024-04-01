@@ -60,7 +60,7 @@ public class AppController {
     public String addUser(User user, Model model) {
         appService.addUser(user);
         var users = appService.findAll();
-        model.addAttribute("products", users);
+        model.addAttribute("users", users);
         return getUsers(model);
     }
 
